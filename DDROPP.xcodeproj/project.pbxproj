@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F16797992C4ED53A0060284E /* DDROPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797982C4ED53A0060284E /* DDROPPApp.swift */; };
+		F167979B2C4ED53A0060284E /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167979A2C4ED53A0060284E /* DropView.swift */; };
+		F167979D2C4ED53B0060284E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167979C2C4ED53B0060284E /* Assets.xcassets */; };
+		F16797A02C4ED53B0060284E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167979F2C4ED53B0060284E /* Preview Assets.xcassets */; };
+		F16797AA2C4ED53B0060284E /* DDROPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797A92C4ED53B0060284E /* DDROPPTests.swift */; };
+		F16797B42C4ED53B0060284E /* DDROPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797B32C4ED53B0060284E /* DDROPPUITests.swift */; };
+		F16797B62C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */; };
+		F1D32A972C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A902C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf */; };
+		F1D32A982C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A912C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf */; };
+		F1D32A992C4EDAD0001811F3 /* RightGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A922C4EDAD0001811F3 /* RightGrotesk-Medium.otf */; };
+		F1D32A9A2C4EDAD0001811F3 /* RightGrotesk-TallFine.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A932C4EDAD0001811F3 /* RightGrotesk-TallFine.otf */; };
+		F1D32A9B2C4EDAD0001811F3 /* RightGrotesk-SpatialBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A942C4EDAD0001811F3 /* RightGrotesk-SpatialBlack.otf */; };
+		F1D32A9C2C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A952C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf */; };
+		F1D32A9D2C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A962C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf */; };
+		F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA12C4EE058001811F3 /* DropViewModel.swift */; };
+		F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA52C4EE08C001811F3 /* DropListView.swift */; };
+		F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F16797A62C4ED53B0060284E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F167978D2C4ED53A0060284E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16797942C4ED53A0060284E;
+			remoteInfo = DDROPP;
+		};
+		F16797B02C4ED53B0060284E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F167978D2C4ED53A0060284E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16797942C4ED53A0060284E;
+			remoteInfo = DDROPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F16797952C4ED53A0060284E /* DDROPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDROPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16797982C4ED53A0060284E /* DDROPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPApp.swift; sourceTree = "<group>"; };
+		F167979A2C4ED53A0060284E /* DropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		F167979C2C4ED53B0060284E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F167979F2C4ED53B0060284E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F16797A52C4ED53B0060284E /* DDROPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDROPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16797A92C4ED53B0060284E /* DDROPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPTests.swift; sourceTree = "<group>"; };
+		F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDROPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16797B32C4ED53B0060284E /* DDROPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPUITests.swift; sourceTree = "<group>"; };
+		F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1D32A902C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-NarrowLight.otf"; sourceTree = "<group>"; };
+		F1D32A912C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-CompactBlack.otf"; sourceTree = "<group>"; };
+		F1D32A922C4EDAD0001811F3 /* RightGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		F1D32A932C4EDAD0001811F3 /* RightGrotesk-TallFine.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-TallFine.otf"; sourceTree = "<group>"; };
+		F1D32A942C4EDAD0001811F3 /* RightGrotesk-SpatialBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-SpatialBlack.otf"; sourceTree = "<group>"; };
+		F1D32A952C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-TightMedium.otf"; sourceTree = "<group>"; };
+		F1D32A962C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-WideMedium.otf"; sourceTree = "<group>"; };
+		F1D32A9E2C4EDAFA001811F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F1D32AA12C4EE058001811F3 /* DropViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewModel.swift; sourceTree = "<group>"; };
+		F1D32AA52C4EE08C001811F3 /* DropListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListView.swift; sourceTree = "<group>"; };
+		F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F16797922C4ED53A0060284E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797A22C4ED53B0060284E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797AC2C4ED53B0060284E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F167978C2C4ED53A0060284E = {
+			isa = PBXGroup;
+			children = (
+				F16797972C4ED53A0060284E /* DDROPP */,
+				F16797A82C4ED53B0060284E /* DDROPPTests */,
+				F16797B22C4ED53B0060284E /* DDROPPUITests */,
+				F16797962C4ED53A0060284E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F16797962C4ED53A0060284E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F16797952C4ED53A0060284E /* DDROPP.app */,
+				F16797A52C4ED53B0060284E /* DDROPPTests.xctest */,
+				F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F16797972C4ED53A0060284E /* DDROPP */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32A9E2C4EDAFA001811F3 /* Info.plist */,
+				F16797982C4ED53A0060284E /* DDROPPApp.swift */,
+				F1D32A9F2C4EE046001811F3 /* Scenes */,
+				F1D32A8F2C4EDABD001811F3 /* Fonts */,
+				F167979C2C4ED53B0060284E /* Assets.xcassets */,
+				F167979E2C4ED53B0060284E /* Preview Content */,
+			);
+			path = DDROPP;
+			sourceTree = "<group>";
+		};
+		F167979E2C4ED53B0060284E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F167979F2C4ED53B0060284E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F16797A82C4ED53B0060284E /* DDROPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				F16797A92C4ED53B0060284E /* DDROPPTests.swift */,
+			);
+			path = DDROPPTests;
+			sourceTree = "<group>";
+		};
+		F16797B22C4ED53B0060284E /* DDROPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F16797B32C4ED53B0060284E /* DDROPPUITests.swift */,
+				F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */,
+			);
+			path = DDROPPUITests;
+			sourceTree = "<group>";
+		};
+		F1D32A8F2C4EDABD001811F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32A912C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf */,
+				F1D32A922C4EDAD0001811F3 /* RightGrotesk-Medium.otf */,
+				F1D32A902C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf */,
+				F1D32A942C4EDAD0001811F3 /* RightGrotesk-SpatialBlack.otf */,
+				F1D32A932C4EDAD0001811F3 /* RightGrotesk-TallFine.otf */,
+				F1D32A952C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf */,
+				F1D32A962C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F1D32A9F2C4EE046001811F3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AA02C4EE04C001811F3 /* Drop */,
+				F1D32AA32C4EE073001811F3 /* DropList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F1D32AA02C4EE04C001811F3 /* Drop */ = {
+			isa = PBXGroup;
+			children = (
+				F167979A2C4ED53A0060284E /* DropView.swift */,
+				F1D32AA12C4EE058001811F3 /* DropViewModel.swift */,
+			);
+			path = Drop;
+			sourceTree = "<group>";
+		};
+		F1D32AA32C4EE073001811F3 /* DropList */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AA42C4EE080001811F3 /* New Group */,
+				F1D32AA52C4EE08C001811F3 /* DropListView.swift */,
+				F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */,
+			);
+			path = DropList;
+			sourceTree = "<group>";
+		};
+		F1D32AA42C4EE080001811F3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F16797942C4ED53A0060284E /* DDROPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16797B92C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPP" */;
+			buildPhases = (
+				F16797912C4ED53A0060284E /* Sources */,
+				F16797922C4ED53A0060284E /* Frameworks */,
+				F16797932C4ED53A0060284E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDROPP;
+			productName = DDROPP;
+			productReference = F16797952C4ED53A0060284E /* DDROPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F16797A42C4ED53B0060284E /* DDROPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16797BC2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPTests" */;
+			buildPhases = (
+				F16797A12C4ED53B0060284E /* Sources */,
+				F16797A22C4ED53B0060284E /* Frameworks */,
+				F16797A32C4ED53B0060284E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F16797A72C4ED53B0060284E /* PBXTargetDependency */,
+			);
+			name = DDROPPTests;
+			productName = DDROPPTests;
+			productReference = F16797A52C4ED53B0060284E /* DDROPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F16797AE2C4ED53B0060284E /* DDROPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16797BF2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPUITests" */;
+			buildPhases = (
+				F16797AB2C4ED53B0060284E /* Sources */,
+				F16797AC2C4ED53B0060284E /* Frameworks */,
+				F16797AD2C4ED53B0060284E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F16797B12C4ED53B0060284E /* PBXTargetDependency */,
+			);
+			name = DDROPPUITests;
+			productName = DDROPPUITests;
+			productReference = F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F167978D2C4ED53A0060284E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F16797942C4ED53A0060284E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F16797A42C4ED53B0060284E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F16797942C4ED53A0060284E;
+					};
+					F16797AE2C4ED53B0060284E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F16797942C4ED53A0060284E;
+					};
+				};
+			};
+			buildConfigurationList = F16797902C4ED53A0060284E /* Build configuration list for PBXProject "DDROPP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F167978C2C4ED53A0060284E;
+			productRefGroup = F16797962C4ED53A0060284E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F16797942C4ED53A0060284E /* DDROPP */,
+				F16797A42C4ED53B0060284E /* DDROPPTests */,
+				F16797AE2C4ED53B0060284E /* DDROPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F16797932C4ED53A0060284E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D32A9D2C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf in Resources */,
+				F1D32A992C4EDAD0001811F3 /* RightGrotesk-Medium.otf in Resources */,
+				F1D32A9B2C4EDAD0001811F3 /* RightGrotesk-SpatialBlack.otf in Resources */,
+				F16797A02C4ED53B0060284E /* Preview Assets.xcassets in Resources */,
+				F1D32A972C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf in Resources */,
+				F1D32A982C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf in Resources */,
+				F167979D2C4ED53B0060284E /* Assets.xcassets in Resources */,
+				F1D32A9C2C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf in Resources */,
+				F1D32A9A2C4EDAD0001811F3 /* RightGrotesk-TallFine.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797A32C4ED53B0060284E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797AD2C4ED53B0060284E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F16797912C4ED53A0060284E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F167979B2C4ED53A0060284E /* DropView.swift in Sources */,
+				F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */,
+				F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */,
+				F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */,
+				F16797992C4ED53A0060284E /* DDROPPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797A12C4ED53B0060284E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16797AA2C4ED53B0060284E /* DDROPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16797AB2C4ED53B0060284E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16797B42C4ED53B0060284E /* DDROPPUITests.swift in Sources */,
+				F16797B62C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F16797A72C4ED53B0060284E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F16797942C4ED53A0060284E /* DDROPP */;
+			targetProxy = F16797A62C4ED53B0060284E /* PBXContainerItemProxy */;
+		};
+		F16797B12C4ED53B0060284E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F16797942C4ED53A0060284E /* DDROPP */;
+			targetProxy = F16797B02C4ED53B0060284E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F16797B72C4ED53B0060284E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F16797B82C4ED53B0060284E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F16797BA2C4ED53B0060284E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DDROPP/Preview Content\"";
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DDROPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F16797BB2C4ED53B0060284E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DDROPP/Preview Content\"";
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DDROPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F16797BD2C4ED53B0060284E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDROPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DDROPP";
+			};
+			name = Debug;
+		};
+		F16797BE2C4ED53B0060284E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDROPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DDROPP";
+			};
+			name = Release;
+		};
+		F16797C02C4ED53B0060284E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDROPP;
+			};
+			name = Debug;
+		};
+		F16797C12C4ED53B0060284E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y77G96KM25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDROPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F16797902C4ED53A0060284E /* Build configuration list for PBXProject "DDROPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16797B72C4ED53B0060284E /* Debug */,
+				F16797B82C4ED53B0060284E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16797B92C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16797BA2C4ED53B0060284E /* Debug */,
+				F16797BB2C4ED53B0060284E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16797BC2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16797BD2C4ED53B0060284E /* Debug */,
+				F16797BE2C4ED53B0060284E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16797BF2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16797C02C4ED53B0060284E /* Debug */,
+				F16797C12C4ED53B0060284E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F167978D2C4ED53A0060284E /* Project object */;
+}
