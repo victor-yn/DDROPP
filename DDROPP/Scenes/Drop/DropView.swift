@@ -6,29 +6,48 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct DropView: View {
+    @State private var isPickerPresented = false
+    @State private var selectedItems: [PHPickerResult] = []
+    @StateObject private var imageLoader = ImageLoader()
+    @State private var isReviewScreenPresented = false
+
+    private let viewModel: DropViewModel
+
+    init(viewModel: DropViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-
             VStack {
                 Text("👋 Have something to drop?")
                     .font(.custom("RightGrotesk-CompactBlack", size: 40))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()
-
                 Spacer()
-
                 dropButton
                     .padding()
-
+                    .sheet(isPresented: $isPickerPresented, onDismiss: { imageLoader.loadImages(from: selectedItems) {
+                        isReviewScreenPresented = true
+                    }
+                    }) {
+                        PhotoPicker(selectedItems: $selectedItems)
+                        //SuccessDropView()
+                            .preferredColorScheme(.dark)
+                    }
                 Spacer()
-
                 seeAllDrops
             }
+        }
+        .navigationBarHidden(true)
+        .fullScreenCover(isPresented: $isReviewScreenPresented) {
+            ReviewDropView(selectedImages: $imageLoader.selectedImages)
         }
     }
 
@@ -36,13 +55,11 @@ struct DropView: View {
         Button(action: {
             // todo:
             // viewModel.didTapOnDrop()
+            isPickerPresented = true
         }) {
             ZStack {
-                Image("DDROPP")
-                    .resizable()
-                    .scaledToFit()
+                WaveformCircle()
                     .frame(width: 300, height: 300)
-                    .shadow(color: Color.white.opacity(0.3), radius: 20, x: 0, y: 10)
 
                 Text("DDROPP")
                     .tracking(4)
@@ -75,5 +92,5 @@ struct DropView: View {
 }
 
 #Preview {
-    DropView()
+    DropView(viewModel: DropViewModel(channelId: "20"))
 }

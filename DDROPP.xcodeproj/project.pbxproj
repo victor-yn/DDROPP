@@ -24,6 +24,23 @@
 		F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA12C4EE058001811F3 /* DropViewModel.swift */; };
 		F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA52C4EE08C001811F3 /* DropListView.swift */; };
 		F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */; };
+		F1D32AAB2C4EE5B7001811F3 /* ReviewDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAA2C4EE5B7001811F3 /* ReviewDropView.swift */; };
+		F1D32AAD2C4EE5BF001811F3 /* ReviewDropViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAC2C4EE5BF001811F3 /* ReviewDropViewModel.swift */; };
+		F1D32AB02C4EF301001811F3 /* SuccessDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */; };
+		F1D32AB32C4EF89D001811F3 /* DropChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */; };
+		F1D32AB52C4EF8A6001811F3 /* DropChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */; };
+		F1D32AB82C4EF9D5001811F3 /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB72C4EF9D5001811F3 /* Waveform.swift */; };
+		F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */; };
+		F1D32ABC2C4F016B001811F3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */; };
+		F1D32AC02C4F0430001811F3 /* DropChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ABF2C4F0430001811F3 /* DropChannel.swift */; };
+		F1D32AC42C4F04AA001811F3 /* GetDropsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */; };
+		F1D32AC72C4F0510001811F3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32AC62C4F0510001811F3 /* RxSwift */; };
+		F1D32ACB2C4F0562001811F3 /* DropRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ACA2C4F0562001811F3 /* DropRepository.swift */; };
+		F1D32ACE2C4F05E7001811F3 /* DropService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ACD2C4F05E7001811F3 /* DropService.swift */; };
+		F1D32AD12C4F064B001811F3 /* GetDropChannelsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */; };
+		F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD32C4F080E001811F3 /* DropMapper.swift */; };
+		F1D32AD72C4F0CD7001811F3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32AD62C4F0CD7001811F3 /* Kingfisher */; };
+		F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD92C4F1575001811F3 /* ChannelViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +82,21 @@
 		F1D32AA12C4EE058001811F3 /* DropViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewModel.swift; sourceTree = "<group>"; };
 		F1D32AA52C4EE08C001811F3 /* DropListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListView.swift; sourceTree = "<group>"; };
 		F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListViewModel.swift; sourceTree = "<group>"; };
+		F1D32AAA2C4EE5B7001811F3 /* ReviewDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDropView.swift; sourceTree = "<group>"; };
+		F1D32AAC2C4EE5BF001811F3 /* ReviewDropViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDropViewModel.swift; sourceTree = "<group>"; };
+		F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessDropView.swift; sourceTree = "<group>"; };
+		F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelView.swift; sourceTree = "<group>"; };
+		F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelViewModel.swift; sourceTree = "<group>"; };
+		F1D32AB72C4EF9D5001811F3 /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
+		F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F1D32ABF2C4F0430001811F3 /* DropChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannel.swift; sourceTree = "<group>"; };
+		F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropsUseCase.swift; sourceTree = "<group>"; };
+		F1D32ACA2C4F0562001811F3 /* DropRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropRepository.swift; sourceTree = "<group>"; };
+		F1D32ACD2C4F05E7001811F3 /* DropService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropService.swift; sourceTree = "<group>"; };
+		F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropChannelsDTO.swift; sourceTree = "<group>"; };
+		F1D32AD32C4F080E001811F3 /* DropMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMapper.swift; sourceTree = "<group>"; };
+		F1D32AD92C4F1575001811F3 /* ChannelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D32AD72C4F0CD7001811F3 /* Kingfisher in Frameworks */,
+				F1D32AC72C4F0510001811F3 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +152,8 @@
 				F1D32A9E2C4EDAFA001811F3 /* Info.plist */,
 				F16797982C4ED53A0060284E /* DDROPPApp.swift */,
 				F1D32A9F2C4EE046001811F3 /* Scenes */,
+				F1D32ABD2C4F0412001811F3 /* Domain */,
+				F1D32AC82C4F052E001811F3 /* Data */,
 				F1D32A8F2C4EDABD001811F3 /* Fonts */,
 				F167979C2C4ED53B0060284E /* Assets.xcassets */,
 				F167979E2C4ED53B0060284E /* Preview Content */,
@@ -167,8 +203,11 @@
 		F1D32A9F2C4EE046001811F3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AA02C4EE04C001811F3 /* Drop */,
 				F1D32AA32C4EE073001811F3 /* DropList */,
+				F1D32AA02C4EE04C001811F3 /* Drop */,
+				F1D32AA92C4EE5A9001811F3 /* ReviewDrop */,
+				F1D32AAE2C4EF2D6001811F3 /* SuccessDrop */,
+				F1D32AB12C4EF884001811F3 /* DropChannel */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -178,6 +217,8 @@
 			children = (
 				F167979A2C4ED53A0060284E /* DropView.swift */,
 				F1D32AA12C4EE058001811F3 /* DropViewModel.swift */,
+				F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */,
+				F1D32AB62C4EF9CB001811F3 /* View */,
 			);
 			path = Drop;
 			sourceTree = "<group>";
@@ -185,18 +226,122 @@
 		F1D32AA32C4EE073001811F3 /* DropList */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AA42C4EE080001811F3 /* New Group */,
 				F1D32AA52C4EE08C001811F3 /* DropListView.swift */,
 				F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */,
+				F1D32AD82C4F155E001811F3 /* View */,
 			);
 			path = DropList;
 			sourceTree = "<group>";
 		};
-		F1D32AA42C4EE080001811F3 /* New Group */ = {
+		F1D32AA92C4EE5A9001811F3 /* ReviewDrop */ = {
 			isa = PBXGroup;
 			children = (
+				F1D32AAA2C4EE5B7001811F3 /* ReviewDropView.swift */,
+				F1D32AAC2C4EE5BF001811F3 /* ReviewDropViewModel.swift */,
 			);
-			path = "New Group";
+			path = ReviewDrop;
+			sourceTree = "<group>";
+		};
+		F1D32AAE2C4EF2D6001811F3 /* SuccessDrop */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */,
+			);
+			path = SuccessDrop;
+			sourceTree = "<group>";
+		};
+		F1D32AB12C4EF884001811F3 /* DropChannel */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */,
+				F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */,
+			);
+			path = DropChannel;
+			sourceTree = "<group>";
+		};
+		F1D32AB62C4EF9CB001811F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AB72C4EF9D5001811F3 /* Waveform.swift */,
+				F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1D32ABD2C4F0412001811F3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32ABE2C4F0424001811F3 /* Model */,
+				F1D32AC12C4F0487001811F3 /* Use Case */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F1D32ABE2C4F0424001811F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32ABF2C4F0430001811F3 /* DropChannel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1D32AC12C4F0487001811F3 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		F1D32AC82C4F052E001811F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AC92C4F0543001811F3 /* Repository */,
+				F1D32ACC2C4F05D8001811F3 /* Service */,
+				F1D32ACF2C4F063A001811F3 /* API Models */,
+				F1D32AD22C4F0800001811F3 /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F1D32AC92C4F0543001811F3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32ACA2C4F0562001811F3 /* DropRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F1D32ACC2C4F05D8001811F3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32ACD2C4F05E7001811F3 /* DropService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F1D32ACF2C4F063A001811F3 /* API Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */,
+			);
+			path = "API Models";
+			sourceTree = "<group>";
+		};
+		F1D32AD22C4F0800001811F3 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AD32C4F080E001811F3 /* DropMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		F1D32AD82C4F155E001811F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AD92C4F1575001811F3 /* ChannelViews.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +360,10 @@
 			dependencies = (
 			);
 			name = DDROPP;
+			packageProductDependencies = (
+				F1D32AC62C4F0510001811F3 /* RxSwift */,
+				F1D32AD62C4F0CD7001811F3 /* Kingfisher */,
+			);
 			productName = DDROPP;
 			productReference = F16797952C4ED53A0060284E /* DDROPP.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +436,10 @@
 				Base,
 			);
 			mainGroup = F167978C2C4ED53A0060284E;
+			packageReferences = (
+				F1D32AC52C4F0510001811F3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F1D32AD52C4F0CD7001811F3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F16797962C4ED53A0060284E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,10 +490,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F167979B2C4ED53A0060284E /* DropView.swift in Sources */,
+				F1D32AB82C4EF9D5001811F3 /* Waveform.swift in Sources */,
+				F1D32AB02C4EF301001811F3 /* SuccessDropView.swift in Sources */,
+				F1D32AAD2C4EE5BF001811F3 /* ReviewDropViewModel.swift in Sources */,
+				F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */,
+				F1D32ACB2C4F0562001811F3 /* DropRepository.swift in Sources */,
+				F1D32AC42C4F04AA001811F3 /* GetDropsUseCase.swift in Sources */,
+				F1D32AB32C4EF89D001811F3 /* DropChannelView.swift in Sources */,
 				F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */,
 				F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */,
+				F1D32AD12C4F064B001811F3 /* GetDropChannelsDTO.swift in Sources */,
+				F1D32ACE2C4F05E7001811F3 /* DropService.swift in Sources */,
+				F1D32AAB2C4EE5B7001811F3 /* ReviewDropView.swift in Sources */,
+				F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */,
+				F1D32AB52C4EF8A6001811F3 /* DropChannelViewModel.swift in Sources */,
 				F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */,
 				F16797992C4ED53A0060284E /* DDROPPApp.swift in Sources */,
+				F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */,
+				F1D32AC02C4F0430001811F3 /* DropChannel.swift in Sources */,
+				F1D32ABC2C4F016B001811F3 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -486,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -504,7 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DDROPP/Preview Content\"";
-				DEVELOPMENT_TEAM = Y77G96KM25;
+				DEVELOPMENT_TEAM = 23EJMT78LW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DDROPP/Info.plist;
@@ -534,7 +702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DDROPP/Preview Content\"";
-				DEVELOPMENT_TEAM = Y77G96KM25;
+				DEVELOPMENT_TEAM = 23EJMT78LW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DDROPP/Info.plist;
@@ -672,6 +840,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1D32AC52C4F0510001811F3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.7.1;
+			};
+		};
+		F1D32AD52C4F0CD7001811F3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1D32AC62C4F0510001811F3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1D32AC52C4F0510001811F3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F1D32AD62C4F0CD7001811F3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1D32AD52C4F0CD7001811F3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F167978D2C4ED53A0060284E /* Project object */;
 }
