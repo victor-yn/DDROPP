@@ -79,9 +79,11 @@ cd DDROPP
 
 ## Usage
 
-<video width="320" height="240" controls>
-  <source src="DDROPP.mp4" type="video/mp4">
-</video>
+
+
+https://github.com/user-attachments/assets/61d5d223-417a-4430-917f-6a218a4d2ffd
+
+
 
 ### Channel list
 
@@ -107,7 +109,7 @@ This is also where you will submit your medias and upload should start here.
 
 ### Success
 
-🥳 🎉 🥳 🎉 🥳 🎉 🥳 🎉
+🥳
 
 ### Drop list
 
