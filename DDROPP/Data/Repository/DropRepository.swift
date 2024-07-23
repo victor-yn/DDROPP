@@ -9,7 +9,8 @@ import Foundation
 import RxSwift
 
 protocol DropRepositoryProtocol {
-    func getDrops() -> Single<[DropChannel]>
+    func getDropChannels() -> Single<[DropChannel]>
+    func getDrops(by id: String) -> Single<[Drop]>
 }
 
 final class DropRepository: DropRepositoryProtocol {
@@ -22,8 +23,15 @@ final class DropRepository: DropRepositoryProtocol {
         self.dropMapper = dropMapper
     }
 
-    func getDrops() -> Single<[DropChannel]> {
-        dropService.getDrops()
+    func getDropChannels() -> Single<[DropChannel]> {
+        dropService.getDropChannels()
+            .map { dto in
+                self.dropMapper.map(dto)
+            }
+    }
+
+    func getDrops(by id: String) -> Single<[Drop]> {
+        dropService.getDrops(by: id)
             .map { dto in
                 self.dropMapper.map(dto)
             }

@@ -2,24 +2,23 @@
 //  GetDropsUseCase.swift
 //  DDROPP
 //
-//  Created by Victor YAN on 22/07/2024.
+//  Created by Victor YAN on 23/07/2024.
 //
 
-import Foundation
 import RxSwift
 
-protocol GetDropChannelsUseCaseProtocol {
-    func execute() -> Single<[DropChannel]>
+protocol GetDropsUseCaseProtocol {
+    func execute(id: String) -> Single<[Drop]>
 }
 
-final class GetDropChannelsUseCase: GetDropChannelsUseCaseProtocol {
+final class GetDropsUseCase: GetDropsUseCaseProtocol {
     private let dropRepository: DropRepositoryProtocol
 
     init(dropRepository: DropRepositoryProtocol = DropRepository()) {
         self.dropRepository = dropRepository
     }
 
-    func execute() -> Single<[DropChannel]> {
-        dropRepository.getDrops()
+    func execute(id: String) -> Single<[Drop]> {
+        dropRepository.getDrops(by: id)
     }
 }

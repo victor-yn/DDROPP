@@ -9,12 +9,8 @@ import Foundation
 
 // Represents our API contract.
 // This object mirrors our expectations (object types, mandatory/optional fields, etc.) to the API.
-struct GetDropsResponseDTO: Decodable {
-    let data: [DropChannelDTO]
-}
-
 struct DropChannelDTO : Decodable {
     let id: String
     let name: String
-    let newDropsCount: String // Assuming the API contract was designed in a good way and returns a String for an Integer field
+    let newDropsCount: String // Simulate that the API contract was not designed in a good great and and returns a String for an Integer field
 }

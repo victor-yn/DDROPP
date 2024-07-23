@@ -22,68 +22,70 @@ struct ReviewDropView: View {
     @State private var showSuccessScreen = false
 
     var body: some View {
-        VStack(spacing: 0) {
-            if selectedImages.indices.contains(selectedIndex) {
-                Image(uiImage: selectedImages[selectedIndex])
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: UIScreen.main.bounds.width - 12, height: UIScreen.main.bounds.width - 12)
-                    .background(.white)
-                    .cornerRadius(20)
-                    .overlay(
-                        emojiOverlay()
-                    )
-            }
-
-            Text("You have selected \(selectedImages.count) photos to drop")
-                .lineLimit(0)
-                .font(.custom("RightGrotesk-SpatialBlack", size: 16))
-                .foregroundColor(.white)
-                .padding()
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack {
-                    ForEach(selectedImages.indices, id: \.self) { index in
-                        Image(uiImage: selectedImages[index])
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
-                            .clipped()
-                            .cornerRadius(10)
-                            .padding(.horizontal, 5)
-                            .overlay(
-                                // Rounded selection
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.white, lineWidth: selectedIndex == index ? 4 : 0)
-                                    .frame(width: 100, height: 100)
-                            )
-                            .onTapGesture {
-                                showRandomEmojis()
-                                selectedIndex = index
-                            }
+        NavigationStack {
+            VStack(spacing: 0) {
+                if selectedImages.indices.contains(selectedIndex) {
+                    Image(uiImage: selectedImages[selectedIndex])
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.width - 12, height: UIScreen.main.bounds.width - 12)
+                        .background(.white)
+                        .cornerRadius(20)
+                        .overlay(
+                            emojiOverlay()
+                        )
+                }
+                
+                Text("You have selected \(selectedImages.count) photos to drop")
+                    .lineLimit(0)
+                    .font(.custom("RightGrotesk-SpatialBlack", size: 16))
+                    .foregroundColor(.white)
+                    .padding()
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack {
+                        ForEach(selectedImages.indices, id: \.self) { index in
+                            Image(uiImage: selectedImages[index])
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 100, height: 100)
+                                .clipped()
+                                .cornerRadius(10)
+                                .padding(.horizontal, 5)
+                                .overlay(
+                                    // Rounded selection
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.white, lineWidth: selectedIndex == index ? 4 : 0)
+                                        .frame(width: 100, height: 100)
+                                )
+                                .onTapGesture {
+                                    showRandomEmojis()
+                                    selectedIndex = index
+                                }
+                        }
                     }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
-            }
-            Spacer()
-            Button(action: {
-                // Todo: Implement upload action
-                uploadMedia()
-            }) {
-                HStack(alignment: .center) {
-                    Text("DDROPP")
-                        .font(.custom("RightGrotesk-CompactBlack", size: 64))
-                        .foregroundColor(.white)
-                    Image(systemName: "paperplane.fill")
-                        .font(.system(size: 50))
-                        .foregroundColor(.white)
-                        .frame(maxHeight: .infinity)
-                        .padding()
+                Spacer()
+                
+                NavigationLink {
+                    SuccessDropView()
+                } label: {
+                    HStack(alignment: .center) {
+                        Text("DDROPP")
+                            .font(.custom("RightGrotesk-CompactBlack", size: 64))
+                            .foregroundColor(.white)
+                        Image(systemName: "paperplane.fill")
+                            .font(.system(size: 40))
+                            .foregroundColor(.white)
+                            .padding()
+                    }.padding()
+                    
                 }
+                
             }
-            .padding()
+            .background(Color.black.edgesIgnoringSafeArea(.all))
         }
-        .background(Color.black.edgesIgnoringSafeArea(.all))
     }
 
     // Move this out

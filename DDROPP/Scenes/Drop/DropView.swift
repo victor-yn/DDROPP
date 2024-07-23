@@ -38,7 +38,6 @@ struct DropView: View {
                     }
                     }) {
                         PhotoPicker(selectedItems: $selectedItems)
-                        //SuccessDropView()
                             .preferredColorScheme(.dark)
                     }
                 Spacer()

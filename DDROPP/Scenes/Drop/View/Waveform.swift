@@ -61,10 +61,11 @@ struct WaveLine: Shape {
     }
 }
 
-struct WaveformCircle_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    VStack {
         WaveformCircle()
             .frame(width: 400, height: 400)
-            .background(Color.black)
-    }
+
+        Spacer()
+    }.background(Color.black)
 }

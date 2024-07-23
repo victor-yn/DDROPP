@@ -8,9 +8,10 @@
 import Foundation
 import RxSwift
 
-class DropListViewModel: ObservableObject {
+final class DropListViewModel: ObservableObject {
     @Published private(set) var hotChannels: [DropChannel] = []
     @Published private(set) var quietChannels: [DropChannel] = []
+    @Published private(set) var newDrops = 0
     @Published private(set) var isLoading: Bool = false
 
     private let getDropChannelsUseCase: GetDropChannelsUseCaseProtocol
@@ -35,7 +36,7 @@ class DropListViewModel: ObservableObject {
                 self?.hotChannels = channels.filter { $0.newDropsCount > 0 }
                 self?.quietChannels = channels.filter { $0.newDropsCount == 0 }
             }, onFailure: { error in
-                // Handle error state
+                // todo: Handle error state
             })
             .disposed(by: disposeBag)
     }
@@ -48,6 +49,7 @@ class DropListViewModel: ObservableObject {
         for channel in channels {
             if channel.newDropsCount > 0 {
                 hotChannels.append(channel)
+                newDrops += channel.newDropsCount
             } else {
                 quietChannels.append(channel)
             }

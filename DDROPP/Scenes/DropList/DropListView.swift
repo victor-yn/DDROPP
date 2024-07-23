@@ -53,7 +53,7 @@ struct DropListView: View {
     private var channelView: some View {
         LazyVStack(alignment: .leading, spacing: 16) {
             if !viewModel.hotChannels.isEmpty {
-                Text("Hot ones 🌶️")
+                Text("\(viewModel.newDrops) new drops! 🌶️")
                     .font(.custom("RightGrotesk-CompactBlack", size: 32))
                     .foregroundColor(.white)
                 ForEach(viewModel.hotChannels) { channel in

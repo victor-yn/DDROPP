@@ -33,7 +33,7 @@
 		F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */; };
 		F1D32ABC2C4F016B001811F3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */; };
 		F1D32AC02C4F0430001811F3 /* DropChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ABF2C4F0430001811F3 /* DropChannel.swift */; };
-		F1D32AC42C4F04AA001811F3 /* GetDropsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */; };
+		F1D32AC42C4F04AA001811F3 /* GetDropChannelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AC32C4F04AA001811F3 /* GetDropChannelsUseCase.swift */; };
 		F1D32AC72C4F0510001811F3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32AC62C4F0510001811F3 /* RxSwift */; };
 		F1D32ACB2C4F0562001811F3 /* DropRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ACA2C4F0562001811F3 /* DropRepository.swift */; };
 		F1D32ACE2C4F05E7001811F3 /* DropService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ACD2C4F05E7001811F3 /* DropService.swift */; };
@@ -41,6 +41,14 @@
 		F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD32C4F080E001811F3 /* DropMapper.swift */; };
 		F1D32AD72C4F0CD7001811F3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32AD62C4F0CD7001811F3 /* Kingfisher */; };
 		F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD92C4F1575001811F3 /* ChannelViews.swift */; };
+		F1D32ADD2C4F1CF1001811F3 /* GrowingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ADC2C4F1CF1001811F3 /* GrowingCircleView.swift */; };
+		F1D32ADF2C4FA414001811F3 /* GetDropsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ADE2C4FA414001811F3 /* GetDropsUseCase.swift */; };
+		F1D32AE12C4FA626001811F3 /* Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE02C4FA626001811F3 /* Drop.swift */; };
+		F1D32AE32C4FA6C0001811F3 /* GetDropsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE22C4FA6C0001811F3 /* GetDropsDTO.swift */; };
+		F1D32AE62C4FB842001811F3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE52C4FB842001811F3 /* NetworkService.swift */; };
+		F1D32AE92C4FBF6A001811F3 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE82C4FBF6A001811F3 /* Toggle.swift */; };
+		F1D32AEB2C4FCCB9001811F3 /* DropEventGroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AEA2C4FCCB9001811F3 /* DropEventGroupedView.swift */; };
+		F1D32AED2C4FCCCD001811F3 /* DropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,12 +99,20 @@
 		F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		F1D32ABF2C4F0430001811F3 /* DropChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannel.swift; sourceTree = "<group>"; };
-		F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropsUseCase.swift; sourceTree = "<group>"; };
+		F1D32AC32C4F04AA001811F3 /* GetDropChannelsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropChannelsUseCase.swift; sourceTree = "<group>"; };
 		F1D32ACA2C4F0562001811F3 /* DropRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropRepository.swift; sourceTree = "<group>"; };
 		F1D32ACD2C4F05E7001811F3 /* DropService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropService.swift; sourceTree = "<group>"; };
 		F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropChannelsDTO.swift; sourceTree = "<group>"; };
 		F1D32AD32C4F080E001811F3 /* DropMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMapper.swift; sourceTree = "<group>"; };
 		F1D32AD92C4F1575001811F3 /* ChannelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViews.swift; sourceTree = "<group>"; };
+		F1D32ADC2C4F1CF1001811F3 /* GrowingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingCircleView.swift; sourceTree = "<group>"; };
+		F1D32ADE2C4FA414001811F3 /* GetDropsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropsUseCase.swift; sourceTree = "<group>"; };
+		F1D32AE02C4FA626001811F3 /* Drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
+		F1D32AE22C4FA6C0001811F3 /* GetDropsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropsDTO.swift; sourceTree = "<group>"; };
+		F1D32AE52C4FB842001811F3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F1D32AE82C4FBF6A001811F3 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		F1D32AEA2C4FCCB9001811F3 /* DropEventGroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropEventGroupedView.swift; sourceTree = "<group>"; };
+		F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +170,7 @@
 				F1D32A9F2C4EE046001811F3 /* Scenes */,
 				F1D32ABD2C4F0412001811F3 /* Domain */,
 				F1D32AC82C4F052E001811F3 /* Data */,
+				F1D32AE42C4FB825001811F3 /* Network */,
 				F1D32A8F2C4EDABD001811F3 /* Fonts */,
 				F167979C2C4ED53B0060284E /* Assets.xcassets */,
 				F167979E2C4ED53B0060284E /* Preview Content */,
@@ -246,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */,
+				F1D32ADB2C4F1CE7001811F3 /* View */,
 			);
 			path = SuccessDrop;
 			sourceTree = "<group>";
@@ -255,6 +273,7 @@
 			children = (
 				F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */,
 				F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */,
+				F1D32AE72C4FBF49001811F3 /* View */,
 			);
 			path = DropChannel;
 			sourceTree = "<group>";
@@ -281,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				F1D32ABF2C4F0430001811F3 /* DropChannel.swift */,
+				F1D32AE02C4FA626001811F3 /* Drop.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,7 +308,8 @@
 		F1D32AC12C4F0487001811F3 /* Use Case */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AC32C4F04AA001811F3 /* GetDropsUseCase.swift */,
+				F1D32AC32C4F04AA001811F3 /* GetDropChannelsUseCase.swift */,
+				F1D32ADE2C4FA414001811F3 /* GetDropsUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -324,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */,
+				F1D32AE22C4FA6C0001811F3 /* GetDropsDTO.swift */,
 			);
 			path = "API Models";
 			sourceTree = "<group>";
@@ -340,6 +362,32 @@
 			isa = PBXGroup;
 			children = (
 				F1D32AD92C4F1575001811F3 /* ChannelViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1D32ADB2C4F1CE7001811F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32ADC2C4F1CF1001811F3 /* GrowingCircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1D32AE42C4FB825001811F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AE52C4FB842001811F3 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F1D32AE72C4FBF49001811F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AE82C4FBF6A001811F3 /* Toggle.swift */,
+				F1D32AEA2C4FCCB9001811F3 /* DropEventGroupedView.swift */,
+				F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -491,16 +539,22 @@
 			files = (
 				F167979B2C4ED53A0060284E /* DropView.swift in Sources */,
 				F1D32AB82C4EF9D5001811F3 /* Waveform.swift in Sources */,
+				F1D32ADD2C4F1CF1001811F3 /* GrowingCircleView.swift in Sources */,
 				F1D32AB02C4EF301001811F3 /* SuccessDropView.swift in Sources */,
 				F1D32AAD2C4EE5BF001811F3 /* ReviewDropViewModel.swift in Sources */,
+				F1D32AE62C4FB842001811F3 /* NetworkService.swift in Sources */,
 				F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */,
 				F1D32ACB2C4F0562001811F3 /* DropRepository.swift in Sources */,
-				F1D32AC42C4F04AA001811F3 /* GetDropsUseCase.swift in Sources */,
+				F1D32AC42C4F04AA001811F3 /* GetDropChannelsUseCase.swift in Sources */,
+				F1D32AE92C4FBF6A001811F3 /* Toggle.swift in Sources */,
 				F1D32AB32C4EF89D001811F3 /* DropChannelView.swift in Sources */,
 				F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */,
 				F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */,
+				F1D32AE32C4FA6C0001811F3 /* GetDropsDTO.swift in Sources */,
 				F1D32AD12C4F064B001811F3 /* GetDropChannelsDTO.swift in Sources */,
 				F1D32ACE2C4F05E7001811F3 /* DropService.swift in Sources */,
+				F1D32AE12C4FA626001811F3 /* Drop.swift in Sources */,
+				F1D32ADF2C4FA414001811F3 /* GetDropsUseCase.swift in Sources */,
 				F1D32AAB2C4EE5B7001811F3 /* ReviewDropView.swift in Sources */,
 				F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */,
 				F1D32AB52C4EF8A6001811F3 /* DropChannelViewModel.swift in Sources */,
@@ -508,7 +562,9 @@
 				F16797992C4ED53A0060284E /* DDROPPApp.swift in Sources */,
 				F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */,
 				F1D32AC02C4F0430001811F3 /* DropChannel.swift in Sources */,
+				F1D32AEB2C4FCCB9001811F3 /* DropEventGroupedView.swift in Sources */,
 				F1D32ABC2C4F016B001811F3 /* ImageLoader.swift in Sources */,
+				F1D32AED2C4FCCCD001811F3 /* DropGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -654,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

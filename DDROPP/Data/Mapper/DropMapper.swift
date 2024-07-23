@@ -8,7 +8,8 @@
 import Foundation
 
 protocol DropMapperProtocol {
-    func map(_ dto: GetDropsResponseDTO) -> [DropChannel]
+    func map(_ dto: [DropChannelDTO]) -> [DropChannel]
+    func map(_ dto: [DropDTO]) -> [Drop]
 }
 
 struct DropMapper: DropMapperProtocol {
@@ -16,8 +17,8 @@ struct DropMapper: DropMapperProtocol {
         case invalidUrl
     }
 
-    func map(_ dto: GetDropsResponseDTO) -> [DropChannel] {
-        dto.data.compactMap(map)
+    func map(_ dto: [DropChannelDTO]) -> [DropChannel] {
+        dto.compactMap(map)
     }
 
     func map(_ dto: DropChannelDTO) -> DropChannel? {
@@ -30,6 +31,23 @@ struct DropMapper: DropMapperProtocol {
             id: dto.id,
             name: dto.name,
             newDropsCount: newDropsCount
+        )
+    }
+
+    func map(_ dto: [DropDTO]) -> [Drop] {
+        dto.compactMap(map)
+    }
+
+    func map(_ dto: DropDTO) -> Drop? {
+        guard let url = URL(string: dto.image) else {
+            // Invalid URL, we skip the picture (we don't want to show empty drops)
+            return nil
+        }
+        return Drop(
+            image: url,
+            author: dto.author,
+            date: dto.date,
+            dropEventId: dto.dropId
         )
     }
 }
