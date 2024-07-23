@@ -63,6 +63,56 @@ I truly believe that nothing exists in the market and the need is real. I've ask
 Addressive marketing strategy includes social media campaigns & influencer marketing/collaboration (Tiktok, Instagram, Snapchat...). The market is real, and I'm targeting both Gen-Z & Gen-Y.
 
 
+## Installation
+
+1. Clone the repo
+
+```
+git clone https://github.com/victor-yn/DDROPP.git
+cd DDROPP
+```
+
+2. Open the project in Xcode
+
+
+3. Build and run the project in Xcode.
+
+## Usage
+
+### Channel list
+
+This is where you see all the channel you're participating. You are notified if there are new drops, you can drop new pictures.
+
+Channels with new drops have the large design with the last dropped picture showcased. Channels without new drops have the small design.
+
+### Main Screen: DDROPP
+
+Core feature of the app. Just a big drop button. 
+
+I really want this screen to be at the central place of the app. If you enter in a channel, you kill the app => when you open it again I would like to show this screen instead of the classic list. I want to make it as easily as possible for people to drop pictures.
+
+### Sharing Media
+
+Native iOS picker to select the medias you want to drop. Only pictures for now but must be expended to all types of medias.
+
+### Review your Media
+
+Screen to review the medias you've selected. Tapping on a thumbail will generate random emojis.
+
+This is also where you will submit your medias and upload should start here.
+
+### Success
+
+🥳 🎉 🥳 🎉 🥳 🎉 🥳 🎉
+
+### Drop list
+
+Two aspects:
+1. Grid: See all dropped medias
+2. Grouped: View media grouped by drop events, making it easy to see who shared what and when.
+
+To implement: download feature & clicking on a drop event should open the grid filtered with the picture set I clicked on
+
 ## App Architecture
 
 The project follows MVVM for scenes, with Clean Architecture in different layers (use cases, repositories and service layers)
