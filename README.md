@@ -119,4 +119,4 @@ If I had more time, key area technical focus would be:
 
 ## Misc
 
-Product name inspired by [https://www.youtube.com/watch?v=NYk9e-3ZpoY](French 79 - DDROPP). Once I figured out what I wanted the build, this was natural to take this name.
+Product name inspired by [French 79 - DDROPP](https://www.youtube.com/watch?v=NYk9e-3ZpoY). Once I figured out what I wanted the build, this was natural to take this name.
