@@ -79,6 +79,10 @@ cd DDROPP
 
 ## Usage
 
+<video width="320" height="240" controls>
+  <source src="DDROPP.mp4" type="video/mp4">
+</video>
+
 ### Channel list
 
 This is where you see all the channel you're participating. You are notified if there are new drops, you can drop new pictures.
