@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-final class DropListViewModel: ObservableObject {
+final class DropChannelListViewModel: ObservableObject {
     @Published private(set) var hotChannels: [DropChannel] = []
     @Published private(set) var quietChannels: [DropChannel] = []
     @Published private(set) var newDrops = 0

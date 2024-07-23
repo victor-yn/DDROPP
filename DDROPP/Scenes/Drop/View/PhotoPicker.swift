@@ -13,7 +13,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
 
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var configuration = PHPickerConfiguration()
-        configuration.filter = .any(of: [.images, .videos])
+        configuration.filter = .any(of: [.images]) // video support to be added
         configuration.selectionLimit = 0 // no limit
 
         let picker = PHPickerViewController(configuration: configuration)

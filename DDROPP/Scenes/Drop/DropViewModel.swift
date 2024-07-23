@@ -8,11 +8,9 @@
 import Foundation
 
 final class DropViewModel: ObservableObject {
-
     private let channelId: String
 
     init(channelId: String) {
         self.channelId = channelId
     }
-    
 }

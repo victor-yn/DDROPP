@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct DropChannel: Identifiable {
+struct DropChannel {
     let id: String
     let name: String
     let newDropsCount: Int
+    let lastDropImage: URL? // Functionality speaking, we could show a placeholder for the channel if no img
 }

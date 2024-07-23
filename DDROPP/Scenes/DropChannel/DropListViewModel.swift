@@ -8,14 +8,14 @@
 import Foundation
 import RxSwift
 
-struct DropEvent {
+struct DropEvent: Equatable {
     let id: String
     let author: String
     let images: [URL]
 }
 
-final class DropChannelViewModel: ObservableObject {
-    enum ChannelType {
+final class DropListViewModel: ObservableObject {
+    enum ChannelType: Equatable {
         case loading
         case all(drops: [Drop])
         case grouped(events: [DropEvent])
@@ -25,17 +25,20 @@ final class DropChannelViewModel: ObservableObject {
 
     // We don't want to run grouping computation until the user goes there
     lazy private var dropEvents: [DropEvent] = {
-        createDropEvents(from: drops)
+        dropGrouper.createDropEvents(from: drops)
     }()
 
     private let channelId: String
     private let getDropsUseCase: GetDropsUseCaseProtocol
+    private let dropGrouper: DropListGrouperProtocol
     private let disposeBag = DisposeBag()
 
     init(channelId: String,
-         getDropsUseCase: GetDropsUseCaseProtocol = GetDropsUseCase()) {
+         getDropsUseCase: GetDropsUseCaseProtocol = GetDropsUseCase(),
+         dropGrouper: DropListGrouperProtocol = DropListGrouper()) {
         self.channelId = channelId
         self.getDropsUseCase = getDropsUseCase
+        self.dropGrouper = dropGrouper
     }
 
     func onAppear() {
@@ -64,28 +67,5 @@ final class DropChannelViewModel: ObservableObject {
                 // todo: Handle error state
             })
             .disposed(by: disposeBag)
-    }
-
-    // Encapsulates grouping logic. Here I faked some rules.
-    private func createDropEvents(from drops: [Drop]) -> [DropEvent] {
-        // Dictionary to group drops by dropEventId
-        var groupedDrops = [String: (author: String, images: [URL])]()
-
-        // Group drops by dropEventId
-        for drop in drops {
-            if var entry = groupedDrops[drop.dropEventId] {
-                entry.images.append(drop.image)
-                groupedDrops[drop.dropEventId] = entry
-            } else {
-                groupedDrops[drop.dropEventId] = (author: drop.author, images: [drop.image])
-            }
-        }
-
-        // Convert the grouped dictionary to an array of DropEvent
-        let dropEvents = groupedDrops.map { (key, value) in
-            DropEvent(id: key, author: value.author, images: value.images)
-        }
-
-        return dropEvents
     }
 }

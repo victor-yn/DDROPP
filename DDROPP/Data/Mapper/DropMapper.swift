@@ -27,10 +27,12 @@ struct DropMapper: DropMapperProtocol {
             // Invalid API response, the "newDropCount" string cannot be represented as an Integer for us
             return nil // We skip the element but we don't fail the entire channel mapping
         }
+
         return DropChannel(
             id: dto.id,
             name: dto.name,
-            newDropsCount: newDropsCount
+            newDropsCount: newDropsCount,
+            lastDropImage: URL(string: dto.lastDropImage)
         )
     }
 

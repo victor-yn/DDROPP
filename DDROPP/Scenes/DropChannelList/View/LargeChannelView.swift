@@ -39,9 +39,9 @@ struct LargeChannelView: View {
 
     private var imageView: some View {
         ZStack(alignment: .bottomTrailing) {
-            KFImage(URL(string: "https://i.ytimg.com/vi/yAv5pLO37mE/maxresdefault.jpg")) // WIP
+            KFImage(channel.lastDropImage)
                 .resizable()
-                .aspectRatio(1, contentMode: .fill)
+                .scaledToFill()
                 .cornerRadius(12)
                 .overlay(
                     // Gradient to make sure the white label is visible on white images
@@ -56,7 +56,7 @@ struct LargeChannelView: View {
                 )
 
             Text("just shared by Victor")
-                .font(.custom("RightGrotesk-CompactBlack", size: 12))
+                .ddroppCompactFont(size: 12)
                 .foregroundColor(.white)
                 .padding(.bottom, 8)
                 .padding(.trailing, 8)
@@ -65,20 +65,20 @@ struct LargeChannelView: View {
 
     private var titleView: some View {
         Text(channel.name)
-            .font(.custom("RightGrotesk-CompactBlack", size: 24))
+            .ddroppCompactFont(size: 24)
             .foregroundColor(.white)
     }
 
     private var dropTotalCountView: some View {
         Text("420 drops")
-            .font(.custom("RightGrotesk-CompactBlack", size: 12))
+            .ddroppCompactFont(size: 12)
             .foregroundColor(.white)
             .opacity(0.8)
     }
 
     private var newDropCountView: some View {
         Text("\(channel.newDropsCount) new drops")
-            .font(.custom("RightGrotesk-CompactBlack", size: 16))
+            .ddroppCompactFont(size: 16)
             .foregroundColor(.white)
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
@@ -90,48 +90,8 @@ struct LargeChannelView: View {
 
     private var justSharedView: some View {
         Text("Emma and Jason just shared")
-            .font(.custom("RightGrotesk-CompactBlack", size: 12))
+            .ddroppCompactFont(size: 12)
             .foregroundColor(.white)
             .opacity(0.8)
-    }
-}
-
-struct SmallChannelView: View {
-    private let channel: DropChannel
-
-    init(channel: DropChannel) {
-        self.channel = channel
-    }
-
-    var body: some View {
-        HStack {
-            imageView
-            VStack(alignment: .leading) {
-                titleView
-                dropTotalCountView
-            }
-            Spacer()
-        }
-        .cornerRadius(12)
-    }
-
-    private var imageView: some View {
-        KFImage(URL(string: "https://i.ytimg.com/vi/yAv5pLO37mE/maxresdefault.jpg")) // WIP
-            .resizable()
-            .frame(width: 60, height: 60)
-            .cornerRadius(8)
-            .clipped()
-    }
-
-    private var titleView: some View {
-        Text(channel.name)
-            .font(.custom("RightGrotesk-CompactBlack", size: 24))
-            .foregroundColor(.white)
-    }
-
-    private var dropTotalCountView: some View {
-        Text("231 drops")
-            .font(.custom("RightGrotesk-CompactBlack", size: 12))
-            .foregroundColor(.white)
     }
 }

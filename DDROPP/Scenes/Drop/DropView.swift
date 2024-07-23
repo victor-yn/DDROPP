@@ -26,15 +26,17 @@ struct DropView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("👋 Have something to drop?")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 40))
+                    .ddroppCompactFont(size: 40)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()
                 Spacer()
                 dropButton
                     .padding()
-                    .sheet(isPresented: $isPickerPresented, onDismiss: { imageLoader.loadImages(from: selectedItems) {
-                        isReviewScreenPresented = true
+                    .fullScreenCover(isPresented: $isPickerPresented, onDismiss: {
+                        guard !selectedItems.isEmpty else { return }
+                        imageLoader.loadImages(from: selectedItems) {
+                            isReviewScreenPresented = true
                     }
                     }) {
                         PhotoPicker(selectedItems: $selectedItems)
@@ -43,17 +45,15 @@ struct DropView: View {
                 Spacer()
                 seeAllDrops
             }
+            .padding(.bottom, 16)
         }
-        .navigationBarHidden(true)
-        .fullScreenCover(isPresented: $isReviewScreenPresented) {
+        .navigationDestination(isPresented: $isReviewScreenPresented) {
             ReviewDropView(selectedImages: $imageLoader.selectedImages)
         }
     }
 
     private var dropButton: some View {
         Button(action: {
-            // todo:
-            // viewModel.didTapOnDrop()
             isPickerPresented = true
         }) {
             ZStack {
@@ -62,7 +62,7 @@ struct DropView: View {
 
                 Text("DDROPP")
                     .tracking(4)
-                    .font(.custom("RightGrotesk-CompactBlack", size: 80))
+                    .ddroppCompactFont(size: 80)
                     .shadow(radius: 10)
                     .foregroundColor(.white)
                     .rotationEffect(.degrees(15))
@@ -72,15 +72,14 @@ struct DropView: View {
     }
 
     private var seeAllDrops: some View {
-        HStack(spacing: 0) {
-            Spacer()
-            Text("See all drops")
-                .font(.custom("RightGrotesk-CompactBlack", size: 24))
-                .foregroundColor(.white)
-            Button(action: {
-                // todo:
-                // viewModel.didTapOnSeeAll()
-            }) {
+        NavigationLink {
+            DropListView(viewModel: DropListViewModel(channelId: "10"))
+        } label: {
+            HStack(spacing: 0) {
+                Spacer()
+                Text("See all drops")
+                    .ddroppCompactFont(size: 24)
+                    .foregroundColor(.white)
                 Image(systemName: "list.bullet.rectangle.portrait")
                     .font(.title)
                     .foregroundColor(.white)

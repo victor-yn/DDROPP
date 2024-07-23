@@ -65,7 +65,6 @@ struct WaveLine: Shape {
     VStack {
         WaveformCircle()
             .frame(width: 400, height: 400)
-
         Spacer()
     }.background(Color.black)
 }

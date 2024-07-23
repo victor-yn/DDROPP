@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct DropListView: View {
-    @ObservedObject private var viewModel: DropListViewModel
+struct DropChannelListView: View {
+    @ObservedObject private var viewModel: DropChannelListViewModel
+    @State private var isDropViewPresented = false
 
-    init(viewModel: DropListViewModel = DropListViewModel()) {
+    init(viewModel: DropChannelListViewModel = DropChannelListViewModel()) {
         self.viewModel = viewModel
     }
 
@@ -23,12 +24,18 @@ struct DropListView: View {
                 } else {
                     ScrollView(showsIndicators: false) {
                         channelView
-                            .padding()
+                            .padding(8)
                     }
                 }
             }
             .foregroundColor(.white)
+            .sheet(isPresented: $isDropViewPresented) {
+                NavigationStack {
+                    DropView(viewModel: DropViewModel(channelId: "example"))
+                }
+            }
         }
+        .navigationBarHidden(true)
         .onAppear {
             viewModel.onAppear()
         }
@@ -39,35 +46,38 @@ struct DropListView: View {
             Spacer()
             ProgressView {
                 Text("Loading")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 64))
+                    .ddroppCompactFont(size: 64)
                     .foregroundColor(.white)
             }
             Spacer()
             Text("DDROPP")
-                .font(.custom("RightGrotesk-CompactBlack", size: 32))
+                .ddroppCompactFont(size: 32)
                 .foregroundColor(.white)
         }
-
     }
 
     private var channelView: some View {
         LazyVStack(alignment: .leading, spacing: 16) {
             if !viewModel.hotChannels.isEmpty {
                 Text("\(viewModel.newDrops) new drops! 🌶️")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 32))
+                    .ddroppCompactFont(size: 32)
                     .foregroundColor(.white)
-                ForEach(viewModel.hotChannels) { channel in
-                    NavigationLink(destination: DropView(viewModel: DropViewModel(channelId: channel.id))) {
+                ForEach(viewModel.hotChannels, id: \.id) { channel in
+                    Button(action: {
+                        isDropViewPresented = true
+                    }) {
                         LargeChannelView(channel: channel)
                     }
                 }
             }
             if !viewModel.quietChannels.isEmpty {
                 Text("Chilling 💆")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 32))
+                    .ddroppCompactFont(size: 32)
                     .foregroundColor(.white)
-                ForEach(viewModel.quietChannels) { channel in
-                    NavigationLink(destination: DropView(viewModel: DropViewModel(channelId: channel.id))) {
+                ForEach(viewModel.quietChannels, id: \.id) { channel in
+                    Button(action: {
+                        isDropViewPresented = true
+                    }) {
                         SmallChannelView(channel: channel)
                     }
                 }
@@ -77,5 +87,5 @@ struct DropListView: View {
 }
 
 #Preview {
-    DropListView()
+    DropChannelListView()
 }

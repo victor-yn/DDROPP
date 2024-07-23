@@ -12,8 +12,6 @@
 		F167979D2C4ED53B0060284E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167979C2C4ED53B0060284E /* Assets.xcassets */; };
 		F16797A02C4ED53B0060284E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167979F2C4ED53B0060284E /* Preview Assets.xcassets */; };
 		F16797AA2C4ED53B0060284E /* DDROPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797A92C4ED53B0060284E /* DDROPPTests.swift */; };
-		F16797B42C4ED53B0060284E /* DDROPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797B32C4ED53B0060284E /* DDROPPUITests.swift */; };
-		F16797B62C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */; };
 		F1D32A972C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A902C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf */; };
 		F1D32A982C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A912C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf */; };
 		F1D32A992C4EDAD0001811F3 /* RightGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A922C4EDAD0001811F3 /* RightGrotesk-Medium.otf */; };
@@ -22,13 +20,13 @@
 		F1D32A9C2C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A952C4EDAD0001811F3 /* RightGrotesk-TightMedium.otf */; };
 		F1D32A9D2C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1D32A962C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf */; };
 		F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA12C4EE058001811F3 /* DropViewModel.swift */; };
-		F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA52C4EE08C001811F3 /* DropListView.swift */; };
-		F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */; };
+		F1D32AA62C4EE08C001811F3 /* DropChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA52C4EE08C001811F3 /* DropChannelListView.swift */; };
+		F1D32AA82C4EE0D4001811F3 /* DropChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AA72C4EE0D4001811F3 /* DropChannelListViewModel.swift */; };
 		F1D32AAB2C4EE5B7001811F3 /* ReviewDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAA2C4EE5B7001811F3 /* ReviewDropView.swift */; };
 		F1D32AAD2C4EE5BF001811F3 /* ReviewDropViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAC2C4EE5BF001811F3 /* ReviewDropViewModel.swift */; };
 		F1D32AB02C4EF301001811F3 /* SuccessDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */; };
-		F1D32AB32C4EF89D001811F3 /* DropChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */; };
-		F1D32AB52C4EF8A6001811F3 /* DropChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */; };
+		F1D32AB32C4EF89D001811F3 /* DropListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB22C4EF89D001811F3 /* DropListView.swift */; };
+		F1D32AB52C4EF8A6001811F3 /* DropListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB42C4EF8A6001811F3 /* DropListViewModel.swift */; };
 		F1D32AB82C4EF9D5001811F3 /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB72C4EF9D5001811F3 /* Waveform.swift */; };
 		F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */; };
 		F1D32ABC2C4F016B001811F3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */; };
@@ -40,7 +38,7 @@
 		F1D32AD12C4F064B001811F3 /* GetDropChannelsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */; };
 		F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD32C4F080E001811F3 /* DropMapper.swift */; };
 		F1D32AD72C4F0CD7001811F3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32AD62C4F0CD7001811F3 /* Kingfisher */; };
-		F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD92C4F1575001811F3 /* ChannelViews.swift */; };
+		F1D32ADA2C4F1575001811F3 /* LargeChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AD92C4F1575001811F3 /* LargeChannelView.swift */; };
 		F1D32ADD2C4F1CF1001811F3 /* GrowingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ADC2C4F1CF1001811F3 /* GrowingCircleView.swift */; };
 		F1D32ADF2C4FA414001811F3 /* GetDropsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32ADE2C4FA414001811F3 /* GetDropsUseCase.swift */; };
 		F1D32AE12C4FA626001811F3 /* Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE02C4FA626001811F3 /* Drop.swift */; };
@@ -49,17 +47,21 @@
 		F1D32AE92C4FBF6A001811F3 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AE82C4FBF6A001811F3 /* Toggle.swift */; };
 		F1D32AEB2C4FCCB9001811F3 /* DropEventGroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AEA2C4FCCB9001811F3 /* DropEventGroupedView.swift */; };
 		F1D32AED2C4FCCCD001811F3 /* DropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */; };
+		F1D32AF02C4FD639001811F3 /* DropListGrouper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AEF2C4FD639001811F3 /* DropListGrouper.swift */; };
+		F1D32AF52C4FD75F001811F3 /* HapticFeedbackHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AF42C4FD75F001811F3 /* HapticFeedbackHelper.swift */; };
+		F1D32AF72C4FDB59001811F3 /* SmallChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AF62C4FDB59001811F3 /* SmallChannelView.swift */; };
+		F1D32AFC2C4FF29C001811F3 /* DropMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AFB2C4FF29C001811F3 /* DropMapperTests.swift */; };
+		F1D32AFE2C4FF572001811F3 /* View+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AFD2C4FF572001811F3 /* View+Font.swift */; };
+		F1D32B002C4FF956001811F3 /* DropChannelListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32AFF2C4FF956001811F3 /* DropChannelListViewModelTests.swift */; };
+		F1D32B022C4FF97F001811F3 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32B012C4FF97F001811F3 /* RxBlocking */; };
+		F1D32B042C4FF97F001811F3 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = F1D32B032C4FF97F001811F3 /* RxTest */; };
+		F1D32B062C4FFA40001811F3 /* DropRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32B052C4FFA40001811F3 /* DropRepositoryTests.swift */; };
+		F1D32B082C4FFB39001811F3 /* DropListGrouperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32B072C4FFB39001811F3 /* DropListGrouperTests.swift */; };
+		F1D32B0A2C4FFC8A001811F3 /* DropListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D32B092C4FFC8A001811F3 /* DropListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F16797A62C4ED53B0060284E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F167978D2C4ED53A0060284E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F16797942C4ED53A0060284E;
-			remoteInfo = DDROPP;
-		};
-		F16797B02C4ED53B0060284E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F167978D2C4ED53A0060284E /* Project object */;
 			proxyType = 1;
@@ -76,9 +78,6 @@
 		F167979F2C4ED53B0060284E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F16797A52C4ED53B0060284E /* DDROPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDROPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16797A92C4ED53B0060284E /* DDROPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPTests.swift; sourceTree = "<group>"; };
-		F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDROPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F16797B32C4ED53B0060284E /* DDROPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPUITests.swift; sourceTree = "<group>"; };
-		F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDROPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F1D32A902C4EDAD0001811F3 /* RightGrotesk-NarrowLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-NarrowLight.otf"; sourceTree = "<group>"; };
 		F1D32A912C4EDAD0001811F3 /* RightGrotesk-CompactBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-CompactBlack.otf"; sourceTree = "<group>"; };
 		F1D32A922C4EDAD0001811F3 /* RightGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-Medium.otf"; sourceTree = "<group>"; };
@@ -88,13 +87,13 @@
 		F1D32A962C4EDAD0001811F3 /* RightGrotesk-WideMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RightGrotesk-WideMedium.otf"; sourceTree = "<group>"; };
 		F1D32A9E2C4EDAFA001811F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F1D32AA12C4EE058001811F3 /* DropViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropViewModel.swift; sourceTree = "<group>"; };
-		F1D32AA52C4EE08C001811F3 /* DropListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListView.swift; sourceTree = "<group>"; };
-		F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListViewModel.swift; sourceTree = "<group>"; };
+		F1D32AA52C4EE08C001811F3 /* DropChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelListView.swift; sourceTree = "<group>"; };
+		F1D32AA72C4EE0D4001811F3 /* DropChannelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelListViewModel.swift; sourceTree = "<group>"; };
 		F1D32AAA2C4EE5B7001811F3 /* ReviewDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDropView.swift; sourceTree = "<group>"; };
 		F1D32AAC2C4EE5BF001811F3 /* ReviewDropViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDropViewModel.swift; sourceTree = "<group>"; };
 		F1D32AAF2C4EF301001811F3 /* SuccessDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessDropView.swift; sourceTree = "<group>"; };
-		F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelView.swift; sourceTree = "<group>"; };
-		F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelViewModel.swift; sourceTree = "<group>"; };
+		F1D32AB22C4EF89D001811F3 /* DropListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListView.swift; sourceTree = "<group>"; };
+		F1D32AB42C4EF8A6001811F3 /* DropListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListViewModel.swift; sourceTree = "<group>"; };
 		F1D32AB72C4EF9D5001811F3 /* Waveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
 		F1D32AB92C4EFED9001811F3 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		F1D32ABB2C4F016B001811F3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -104,7 +103,7 @@
 		F1D32ACD2C4F05E7001811F3 /* DropService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropService.swift; sourceTree = "<group>"; };
 		F1D32AD02C4F064B001811F3 /* GetDropChannelsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropChannelsDTO.swift; sourceTree = "<group>"; };
 		F1D32AD32C4F080E001811F3 /* DropMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMapper.swift; sourceTree = "<group>"; };
-		F1D32AD92C4F1575001811F3 /* ChannelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViews.swift; sourceTree = "<group>"; };
+		F1D32AD92C4F1575001811F3 /* LargeChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeChannelView.swift; sourceTree = "<group>"; };
 		F1D32ADC2C4F1CF1001811F3 /* GrowingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingCircleView.swift; sourceTree = "<group>"; };
 		F1D32ADE2C4FA414001811F3 /* GetDropsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDropsUseCase.swift; sourceTree = "<group>"; };
 		F1D32AE02C4FA626001811F3 /* Drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
@@ -113,6 +112,15 @@
 		F1D32AE82C4FBF6A001811F3 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
 		F1D32AEA2C4FCCB9001811F3 /* DropEventGroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropEventGroupedView.swift; sourceTree = "<group>"; };
 		F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGridView.swift; sourceTree = "<group>"; };
+		F1D32AEF2C4FD639001811F3 /* DropListGrouper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListGrouper.swift; sourceTree = "<group>"; };
+		F1D32AF42C4FD75F001811F3 /* HapticFeedbackHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackHelper.swift; sourceTree = "<group>"; };
+		F1D32AF62C4FDB59001811F3 /* SmallChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallChannelView.swift; sourceTree = "<group>"; };
+		F1D32AFB2C4FF29C001811F3 /* DropMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMapperTests.swift; sourceTree = "<group>"; };
+		F1D32AFD2C4FF572001811F3 /* View+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Font.swift"; sourceTree = "<group>"; };
+		F1D32AFF2C4FF956001811F3 /* DropChannelListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropChannelListViewModelTests.swift; sourceTree = "<group>"; };
+		F1D32B052C4FFA40001811F3 /* DropRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropRepositoryTests.swift; sourceTree = "<group>"; };
+		F1D32B072C4FFB39001811F3 /* DropListGrouperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListGrouperTests.swift; sourceTree = "<group>"; };
+		F1D32B092C4FFC8A001811F3 /* DropListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16797AC2C4ED53B0060284E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F1D32B042C4FF97F001811F3 /* RxTest in Frameworks */,
+				F1D32B022C4FF97F001811F3 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +150,6 @@
 			children = (
 				F16797972C4ED53A0060284E /* DDROPP */,
 				F16797A82C4ED53B0060284E /* DDROPPTests */,
-				F16797B22C4ED53B0060284E /* DDROPPUITests */,
 				F16797962C4ED53A0060284E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,7 +159,6 @@
 			children = (
 				F16797952C4ED53A0060284E /* DDROPP.app */,
 				F16797A52C4ED53B0060284E /* DDROPPTests.xctest */,
-				F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +172,7 @@
 				F1D32ABD2C4F0412001811F3 /* Domain */,
 				F1D32AC82C4F052E001811F3 /* Data */,
 				F1D32AE42C4FB825001811F3 /* Network */,
+				F1D32AF12C4FD70E001811F3 /* Utility */,
 				F1D32A8F2C4EDABD001811F3 /* Fonts */,
 				F167979C2C4ED53B0060284E /* Assets.xcassets */,
 				F167979E2C4ED53B0060284E /* Preview Content */,
@@ -190,17 +192,13 @@
 			isa = PBXGroup;
 			children = (
 				F16797A92C4ED53B0060284E /* DDROPPTests.swift */,
+				F1D32AFB2C4FF29C001811F3 /* DropMapperTests.swift */,
+				F1D32AFF2C4FF956001811F3 /* DropChannelListViewModelTests.swift */,
+				F1D32B092C4FFC8A001811F3 /* DropListViewModelTests.swift */,
+				F1D32B052C4FFA40001811F3 /* DropRepositoryTests.swift */,
+				F1D32B072C4FFB39001811F3 /* DropListGrouperTests.swift */,
 			);
 			path = DDROPPTests;
-			sourceTree = "<group>";
-		};
-		F16797B22C4ED53B0060284E /* DDROPPUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F16797B32C4ED53B0060284E /* DDROPPUITests.swift */,
-				F16797B52C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift */,
-			);
-			path = DDROPPUITests;
 			sourceTree = "<group>";
 		};
 		F1D32A8F2C4EDABD001811F3 /* Fonts */ = {
@@ -220,7 +218,7 @@
 		F1D32A9F2C4EE046001811F3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AA32C4EE073001811F3 /* DropList */,
+				F1D32AA32C4EE073001811F3 /* DropChannelList */,
 				F1D32AA02C4EE04C001811F3 /* Drop */,
 				F1D32AA92C4EE5A9001811F3 /* ReviewDrop */,
 				F1D32AAE2C4EF2D6001811F3 /* SuccessDrop */,
@@ -240,14 +238,14 @@
 			path = Drop;
 			sourceTree = "<group>";
 		};
-		F1D32AA32C4EE073001811F3 /* DropList */ = {
+		F1D32AA32C4EE073001811F3 /* DropChannelList */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AA52C4EE08C001811F3 /* DropListView.swift */,
-				F1D32AA72C4EE0D4001811F3 /* DropListViewModel.swift */,
+				F1D32AA52C4EE08C001811F3 /* DropChannelListView.swift */,
+				F1D32AA72C4EE0D4001811F3 /* DropChannelListViewModel.swift */,
 				F1D32AD82C4F155E001811F3 /* View */,
 			);
-			path = DropList;
+			path = DropChannelList;
 			sourceTree = "<group>";
 		};
 		F1D32AA92C4EE5A9001811F3 /* ReviewDrop */ = {
@@ -271,8 +269,9 @@
 		F1D32AB12C4EF884001811F3 /* DropChannel */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AB22C4EF89D001811F3 /* DropChannelView.swift */,
-				F1D32AB42C4EF8A6001811F3 /* DropChannelViewModel.swift */,
+				F1D32AB22C4EF89D001811F3 /* DropListView.swift */,
+				F1D32AB42C4EF8A6001811F3 /* DropListViewModel.swift */,
+				F1D32AEF2C4FD639001811F3 /* DropListGrouper.swift */,
 				F1D32AE72C4FBF49001811F3 /* View */,
 			);
 			path = DropChannel;
@@ -361,7 +360,8 @@
 		F1D32AD82C4F155E001811F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F1D32AD92C4F1575001811F3 /* ChannelViews.swift */,
+				F1D32AD92C4F1575001811F3 /* LargeChannelView.swift */,
+				F1D32AF62C4FDB59001811F3 /* SmallChannelView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -390,6 +390,31 @@
 				F1D32AEC2C4FCCCD001811F3 /* DropGridView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F1D32AF12C4FD70E001811F3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AF32C4FD749001811F3 /* UI */,
+				F1D32AF22C4FD71E001811F3 /* Haptic */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F1D32AF22C4FD71E001811F3 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AF42C4FD75F001811F3 /* HapticFeedbackHelper.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		F1D32AF32C4FD749001811F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F1D32AFD2C4FF572001811F3 /* View+Font.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,27 +455,13 @@
 				F16797A72C4ED53B0060284E /* PBXTargetDependency */,
 			);
 			name = DDROPPTests;
+			packageProductDependencies = (
+				F1D32B012C4FF97F001811F3 /* RxBlocking */,
+				F1D32B032C4FF97F001811F3 /* RxTest */,
+			);
 			productName = DDROPPTests;
 			productReference = F16797A52C4ED53B0060284E /* DDROPPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F16797AE2C4ED53B0060284E /* DDROPPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F16797BF2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPUITests" */;
-			buildPhases = (
-				F16797AB2C4ED53B0060284E /* Sources */,
-				F16797AC2C4ED53B0060284E /* Frameworks */,
-				F16797AD2C4ED53B0060284E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F16797B12C4ED53B0060284E /* PBXTargetDependency */,
-			);
-			name = DDROPPUITests;
-			productName = DDROPPUITests;
-			productReference = F16797AF2C4ED53B0060284E /* DDROPPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -466,10 +477,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					F16797A42C4ED53B0060284E = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = F16797942C4ED53A0060284E;
-					};
-					F16797AE2C4ED53B0060284E = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = F16797942C4ED53A0060284E;
 					};
@@ -494,7 +501,6 @@
 			targets = (
 				F16797942C4ED53A0060284E /* DDROPP */,
 				F16797A42C4ED53B0060284E /* DDROPPTests */,
-				F16797AE2C4ED53B0060284E /* DDROPPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -523,13 +529,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F16797AD2C4ED53B0060284E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -541,23 +540,27 @@
 				F1D32AB82C4EF9D5001811F3 /* Waveform.swift in Sources */,
 				F1D32ADD2C4F1CF1001811F3 /* GrowingCircleView.swift in Sources */,
 				F1D32AB02C4EF301001811F3 /* SuccessDropView.swift in Sources */,
+				F1D32AF02C4FD639001811F3 /* DropListGrouper.swift in Sources */,
 				F1D32AAD2C4EE5BF001811F3 /* ReviewDropViewModel.swift in Sources */,
 				F1D32AE62C4FB842001811F3 /* NetworkService.swift in Sources */,
-				F1D32ADA2C4F1575001811F3 /* ChannelViews.swift in Sources */,
+				F1D32AFE2C4FF572001811F3 /* View+Font.swift in Sources */,
+				F1D32ADA2C4F1575001811F3 /* LargeChannelView.swift in Sources */,
 				F1D32ACB2C4F0562001811F3 /* DropRepository.swift in Sources */,
 				F1D32AC42C4F04AA001811F3 /* GetDropChannelsUseCase.swift in Sources */,
 				F1D32AE92C4FBF6A001811F3 /* Toggle.swift in Sources */,
-				F1D32AB32C4EF89D001811F3 /* DropChannelView.swift in Sources */,
-				F1D32AA62C4EE08C001811F3 /* DropListView.swift in Sources */,
-				F1D32AA82C4EE0D4001811F3 /* DropListViewModel.swift in Sources */,
+				F1D32AB32C4EF89D001811F3 /* DropListView.swift in Sources */,
+				F1D32AA62C4EE08C001811F3 /* DropChannelListView.swift in Sources */,
+				F1D32AA82C4EE0D4001811F3 /* DropChannelListViewModel.swift in Sources */,
 				F1D32AE32C4FA6C0001811F3 /* GetDropsDTO.swift in Sources */,
 				F1D32AD12C4F064B001811F3 /* GetDropChannelsDTO.swift in Sources */,
 				F1D32ACE2C4F05E7001811F3 /* DropService.swift in Sources */,
+				F1D32AF52C4FD75F001811F3 /* HapticFeedbackHelper.swift in Sources */,
 				F1D32AE12C4FA626001811F3 /* Drop.swift in Sources */,
 				F1D32ADF2C4FA414001811F3 /* GetDropsUseCase.swift in Sources */,
 				F1D32AAB2C4EE5B7001811F3 /* ReviewDropView.swift in Sources */,
+				F1D32AF72C4FDB59001811F3 /* SmallChannelView.swift in Sources */,
 				F1D32ABA2C4EFED9001811F3 /* PhotoPicker.swift in Sources */,
-				F1D32AB52C4EF8A6001811F3 /* DropChannelViewModel.swift in Sources */,
+				F1D32AB52C4EF8A6001811F3 /* DropListViewModel.swift in Sources */,
 				F1D32AA22C4EE058001811F3 /* DropViewModel.swift in Sources */,
 				F16797992C4ED53A0060284E /* DDROPPApp.swift in Sources */,
 				F1D32AD42C4F080E001811F3 /* DropMapper.swift in Sources */,
@@ -572,16 +575,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D32B062C4FFA40001811F3 /* DropRepositoryTests.swift in Sources */,
 				F16797AA2C4ED53B0060284E /* DDROPPTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16797AB2C4ED53B0060284E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F16797B42C4ED53B0060284E /* DDROPPUITests.swift in Sources */,
-				F16797B62C4ED53B0060284E /* DDROPPUITestsLaunchTests.swift in Sources */,
+				F1D32B002C4FF956001811F3 /* DropChannelListViewModelTests.swift in Sources */,
+				F1D32AFC2C4FF29C001811F3 /* DropMapperTests.swift in Sources */,
+				F1D32B082C4FFB39001811F3 /* DropListGrouperTests.swift in Sources */,
+				F1D32B0A2C4FFC8A001811F3 /* DropListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,11 +591,6 @@
 			isa = PBXTargetDependency;
 			target = F16797942C4ED53A0060284E /* DDROPP */;
 			targetProxy = F16797A62C4ED53B0060284E /* PBXContainerItemProxy */;
-		};
-		F16797B12C4ED53B0060284E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F16797942C4ED53A0060284E /* DDROPP */;
-			targetProxy = F16797B02C4ED53B0060284E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -735,8 +729,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -765,8 +758,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -820,42 +812,6 @@
 			};
 			name = Release;
 		};
-		F16797C02C4ED53B0060284E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y77G96KM25;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DDROPP;
-			};
-			name = Debug;
-		};
-		F16797C12C4ED53B0060284E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y77G96KM25;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Drop.DDROPPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DDROPP;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -882,15 +838,6 @@
 			buildConfigurations = (
 				F16797BD2C4ED53B0060284E /* Debug */,
 				F16797BE2C4ED53B0060284E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F16797BF2C4ED53B0060284E /* Build configuration list for PBXNativeTarget "DDROPPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F16797C02C4ED53B0060284E /* Debug */,
-				F16797C12C4ED53B0060284E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -926,6 +873,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1D32AD52C4F0CD7001811F3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		F1D32B012C4FF97F001811F3 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1D32AC52C4F0510001811F3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		F1D32B032C4FF97F001811F3 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1D32AC52C4F0510001811F3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

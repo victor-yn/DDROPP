@@ -13,4 +13,5 @@ struct DropChannelDTO : Decodable {
     let id: String
     let name: String
     let newDropsCount: String // Simulate that the API contract was not designed in a good great and and returns a String for an Integer field
+    let lastDropImage: String
 }

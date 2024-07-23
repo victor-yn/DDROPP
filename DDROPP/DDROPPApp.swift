@@ -11,7 +11,7 @@ import SwiftUI
 struct DDROPPApp: App {
     var body: some Scene {
         WindowGroup {
-            DropListView()
+            DropChannelListView()
             //DropView(viewModel: DropViewModel(channelId: "22"))
         }
     }

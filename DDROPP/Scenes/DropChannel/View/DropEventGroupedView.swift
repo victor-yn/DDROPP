@@ -30,11 +30,11 @@ struct DropEventGroupedView: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("\(event.author) dropped \(event.images.count) pictures")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 24))
+                    .ddroppCompactFont(size: 24)
                     .foregroundColor(.white)
                 Spacer()
                 Text("4h ago")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 12))
+                    .ddroppCompactFont(size: 12)
                     .foregroundColor(.gray)
             }
             ZStack {

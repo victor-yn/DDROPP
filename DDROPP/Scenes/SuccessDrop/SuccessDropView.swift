@@ -7,56 +7,41 @@
 
 import SwiftUI
 
-// Should I keep?
-struct UploadingView: View {
-    var body: some View {
-        VStack {
-            ProgressView("Uploading...")
-                .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                .foregroundColor(.white)
-                .padding()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black.opacity(0.8).edgesIgnoringSafeArea(.all))
-    }
-}
-
 struct SuccessDropView: View {
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
-
             GrowingCirclesView()
             VStack {
                 Spacer()
-                Text("DDROPPED!")
-                    .font(.custom("RightGrotesk-CompactBlack", size: 64))
-                    .foregroundColor(.white)
-                    .scaleEffect(1.2)
-                    .opacity(1.0)
-                    .transition(.scale)
+                successText
                 Spacer()
                 NavigationLink {
-                    DropChannelView(viewModel: DropChannelViewModel(channelId: "10"))
+                    DropListView(viewModel: DropListViewModel(channelId: "10"))
                 } label: {
-                    Text("See all drops")
-                        .font(.custom("RightGrotesk-CompactBlack", size: 24))
-                        .foregroundColor(.white)
+                    seeAllText
                 }
             }
         }
         .navigationBarBackButtonHidden()
         .onAppear {
-            HapticFeedbackHelper.triggerSuccess()
+            HapticFeedbackHelper().triggerSuccess()
         }
     }
-}
 
-// Move this out!
-class HapticFeedbackHelper {
-    static func triggerSuccess() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
+    private var successText: some View {
+        Text("DDROPPED!")
+            .ddroppCompactFont(size: 64)
+            .foregroundColor(.white)
+            .scaleEffect(1.2)
+            .opacity(1.0)
+            .transition(.scale)
+    }
+
+    private var seeAllText: some View {
+        Text("See all drops")
+            .ddroppCompactFont(size: 24)
+            .foregroundColor(.white)
     }
 }
 

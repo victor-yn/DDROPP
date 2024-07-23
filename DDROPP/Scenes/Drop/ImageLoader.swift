@@ -14,21 +14,19 @@ class ImageLoader: ObservableObject {
     func loadImages(from results: [PHPickerResult], completion: @escaping () -> Void) {
         selectedImages.removeAll()
         let dispatchGroup = DispatchGroup()
-
-        for item in results {
-            if item.itemProvider.canLoadObject(ofClass: UIImage.self) {
+        results
+            .filter { $0.itemProvider.canLoadObject(ofClass: UIImage.self) }
+            .forEach { item in
                 dispatchGroup.enter()
                 item.itemProvider.loadObject(ofClass: UIImage.self) { (image, error) in
+                    defer { dispatchGroup.leave() }
                     if let uiImage = image as? UIImage {
                         DispatchQueue.main.async {
                             self.selectedImages.append(uiImage)
                         }
                     }
-                    dispatchGroup.leave()
                 }
             }
-        }
-
         dispatchGroup.notify(queue: .main) {
             completion()
         }

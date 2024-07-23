@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Drop {
+struct Drop: Equatable {
     let image: URL
     let author: String
     let date: Date
